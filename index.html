@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- RESPONSIBLE FOR RESPONSIVENESS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sarvopy Properties " />
+    <!-- =========== FAVICONS =========== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <!-- =========== GOOGLE FONTS =========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- =========== CSS STYLES =========== -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <!-- =========== ICONS =========== -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- =========== COMPANY/WEBSITE TITLE =========== -->
+    <title>
+      Explore the Next Dream Property Available for Buy | Sell | Rent
+    </title>
+  </head>
+  <body>
+    <!-- =========== HEADER =========== -->
+    <header class="header__container">
+      <nav class="navbar__container flex">
+        <!-- COMPANY LOGO -->
+        <a href="#">
+          <img
+            class="navbar__logo-img"
+            alt="Sarvopy Properties logo"
+            src="./img/sarvopy-properties-logo.png"
+          />
+        </a>
+        <!-- NAVIGATION -->
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list flex">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#property" class="navbar__link">Properties</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#cta" class="navbar__link">Contact</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__link">About</a>
+            </li>
+            <!-- NAVBAR CTA (CALL TO ACTION) -->
+            <li class="navbar__item">
+              <a href="#cta" class="btn cta__btn">
+                <span class="btn__inner">Free Property Tour</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- MOBILE NAVIGATION CONTROL BUTTONS -->
+        <button class="navbar__menu-btns">
+          <ion-icon
+            name="menu-outline"
+            class="navbar__menu-icon navbar__menu-bars"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            class="navbar__menu-icon navbar__menu-times"
+          ></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- =========== HERO =========== -->
+      <section class="section__hero margin-bottom-md">
+        <!-- =========== SLIDE SHOW =========== -->
+        <div class="carousel">
+          <div class="carousel__inner">
+            <div class="slides" id="hero-imgs">
+              <!-- SLIDE 01 -->
+              <div class="slide">
+                <div class="slide__content">
+                  <div class="slide__caption">
+                    <h2 class="heading__secondary">Verified Homes For You</h2>
+                    <p class="slide__text">
+                      We evaluate, verify and list property
+                    </p>
+                    <a href="#featured" class="btn cta__btn">
+                      <span class="btn__inner">See How</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="slide__img-container">
+                  <img
+                    src="./img/hero/apartment-02.jpg"
+                    alt="Night Bedroom, Living Room"
+                    class="slide__img"
+                  />
+                </div>
+              </div>
+              <!-- SLIDE 02 -->
+              <div class="slide">
+                <div class="slide__content">
+                  <div class="slide__caption">
+                    <h2 class="heading__secondary">UPGRADE TO BIGGER HOME</h2>
+                    <p class="slide__text">
+                      Looking to fulfil your dream, upgrade to bigger home
+                    </p>
+                    <a href="#featured" class="btn cta__btn">
+                      <span class="btn__inner">See How</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="slide__img-container">
+                  <img
+                    src="./img/hero/apartment-01.jpg"
+                    alt="New House Apartment Living Room"
+                    class="slide__img"
+                  />
+                </div>
+              </div>
+              <!-- SLIDE 03 -->
+              <div class="slide">
+                <div class="slide__content">
+                  <div class="slide__caption">
+                    <h2 class="heading__secondary">
+                      SWEET HOME FOR SMALL FAMILY
+                    </h2>
+                    <p class="slide__text">
+                      Book your first sweet home with top ameneties and enjoy
+                      your dream.
+                    </p>
+                    <a href="#featured" class="btn cta__btn">
+                      <span class="btn__inner">See How</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="slide__img-container">
+                  <img
+                    src="./img/hero/apartment-03.jpg"
+                    alt="Beautiful living room, real estate property"
+                    class="slide__img"
+                  />
+                </div>
+              </div>
+              <!-- SLIDE 04 -->
+              <div class="slide">
+                <div class="slide__content">
+                  <div class="slide__caption">
+                    <h2 class="heading__secondary">Quality Homes For You</h2>
+                    <p class="slide__text">
+                      We are experts in finding the best quality homes
+                    </p>
+                    <a href="#featured" class="btn cta__btn">
+                      <span class="btn__inner">See How</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="slide__img-container">
+                  <img
+                    src="./img/hero/apartment-04.jpg"
+                    alt="Living room, real estate property, real estate photography"
+                    class="slide__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- SLIDE ARROWS -->
+            <div class="arrows">
+              <div class="arrow prev" id="hero-left-arrow">
+                <span class="svg svg__arrow-left">
+                  <svg
+                    version="1.1"
+                    id="svg4-Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="14px"
+                    height="26px"
+                    viewBox="0 0 14 26"
+                    enable-background="new 0 0 14 26"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"
+                    />
+                  </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+              <div class="arrow next" id="hero-right-arrow">
+                <span class="svg svg__arrow-right">
+                  <svg
+                    version="1.1"
+                    id="svg5-Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="14px"
+                    height="26px"
+                    viewBox="0 0 14 26"
+                    enable-background="new 0 0 14 26"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"
+                    />
+                  </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== SEARCH PROPERTIES =========== -->
+      <section class="section__search section__space">
+        <div class="container">
+          <form class="search__form grid grid-3-cols">
+            <div>
+              <!-- SEARCH PURPOSE -->
+              <select id="select-purpose" required>
+                <option value="">For Buy/Rent:</option>
+                <option value="buy">For Buy</option>
+                <option value="sell">For Sell</option>
+              </select>
+            </div>
+            <div>
+              <!-- SEARCH PROPERTY -->
+              <select id="select-property" required>
+                <option value="">Property Types:</option>
+                <option value="residential-apartment">
+                  Residential Apartment
+                </option>
+                <option value="residential-farm">Residential Farm House</option>
+                <option value="residential-duplex">Residential Duplex</option>
+                <option value="residential-penthouse">
+                  Residential Penthouse
+                </option>
+                <option value="residential-bungalow">
+                  Residential Bungalow
+                </option>
+                <option value="residential-triplex">Residential Triplex</option>
+                <option value="residential-studio">
+                  Residential Studio Apartment
+                </option>
+                <option value="commercial-apartment">
+                  Commercial Apartment
+                </option>
+                <option value="commercial-farm">Commercial Farm House</option>
+                <option value="commercial-duplex">Commercial Duplex</option>
+                <option value="commercial-penthouse">
+                  Commercial Penthouse
+                </option>
+                <option value="commercial-bungalow">Commercial Bungalow</option>
+                <option value="commercial-triplex">Commercial Triplex</option>
+                <option value="commercial-studio">
+                  Commercial Studio Apartment
+                </option>
+                <option value="industrial-land">Industrial Land</option>
+                <option value="agricultural-land">Agricultural Land</option>
+                <option value="pg">PG</option>
+              </select>
+            </div>
+            <div>
+              <!-- SEARCH LOCATION -->
+              <select id="select-location" required>
+                <option value="">Location:</option>
+                <option value="16592">Airport Road</option>
+                <option value="9822">Amarawat kalan</option>
+                <option value="16593">Amarnath Colony</option>
+                <option value="16594">Amrawad Khurd</option>
+                <option value="9823">Anand nagar</option>
+                <option value="16596">Arera Colony</option>
+                <option value="16597">Arera Hills</option>
+                <option value="9824">Arera hills</option>
+                <option value="9825">Arwaliya</option>
+                <option value="16595">Awadhpuri</option>
+                <option value="9826">Ayodhaya nagar</option>
+                <option value="9827">Bag mungalia</option>
+                <option value="16603">Bagli</option>
+                <option value="9828">Bagroda</option>
+                <option value="9829">Bairagarh</option>
+                <option value="9830">Bairagarh chichali</option>
+                <option value="16604">Bairagarh Chichali</option>
+                <option value="16606">Banjari</option>
+                <option value="9835">Barkheda baramad</option>
+                <option value="9836">Barkheda h.e.</option>
+                <option value="9837">Barkheda nathu</option>
+                <option value="16610">Barkheda Salam</option>
+                <option value="9838">Barkhedi</option>
+                <option value="16611">Barkhera Pathani</option>
+                <option value="9839">Basai</option>
+                <option value="16612">Basant Kunj</option>
+                <option value="9840">Bawachiya</option>
+                <option value="9841">Bawadia kalan</option>
+                <option value="16607">Bawaria Kalan</option>
+                <option value="16608">Bawdiya</option>
+                <option value="9842">Bazaria shahajahanabad</option>
+                <option value="16601">BDA Colony</option>
+                <option value="9844">Berasia road</option>
+                <option value="16609">Bharat Nagar</option>
+                <option value="16613">Bhauri</option>
+                <option value="9719">Bheem nagar</option>
+                <option value="16602">BHEL Sangam Colony</option>
+                <option value="16614">Bhojpur Road</option>
+                <option value="9846">Bhonri</option>
+                <option value="9849">Bilakho</option>
+                <option value="16227">By pass road</option>
+                <option value="9850">C.t.t.nagar</option>
+                <option value="9851">Chandbad</option>
+                <option value="16615">Chatrasal Nagar</option>
+                <option value="9852">Chhola road</option>
+                <option value="9853">Chouk</option>
+                <option value="16616">Chuna Bhatti</option>
+                <option value="9854">Dak bhawan</option>
+                <option value="16617">Danish Kunj</option>
+                <option value="16618">Danish Nagar</option>
+                <option value="16619">Dham Kheda</option>
+                <option value="9855">Dhamarra</option>
+                <option value="9856">Dhaturiya</option>
+                <option value="9857">Dillod</option>
+                <option value="9858">Dungariya</option>
+                <option value="9859">Durga chouk</option>
+                <option value="16620">E 8 Extension</option>
+                <option value="9860">E-2 sector</option>
+                <option value="9861">Fanda</option>
+                <option value="9862">Gada jangeer</option>
+                <option value="9863">Gandhi medical college</option>
+                <option value="9865">Govindpura</option>
+                <option value="16624">Govindpura Industrial Area</option>
+                <option value="16625">Gulmohar Colony</option>
+                <option value="9866">Gunga</option>
+                <option value="16225">Hoshangabad</option>
+                <option value="16590">Hoshangabad Road</option>
+                <option value="16628">Huzur</option>
+                <option value="16629">Idgah Hills</option>
+                <option value="9870">Imaliya</option>
+                <option value="16630">Indra Vihar Colony</option>
+                <option value="16631">Indrapuri</option>
+                <option value="16632">Indus Towne</option>
+                <option value="9871">Industrial estate</option>
+                <option value="9872">Islam nagar</option>
+                <option value="9873">Itwara</option>
+                <option value="16633">J K Road</option>
+                <option value="16589">Jatkhedi</option>
+                <option value="16635">Jawahar Chowk</option>
+                <option value="9877">Jhagaria khurd</option>
+                <option value="16226">Jk road</option>
+                <option value="9878">Jumerati</option>
+                <option value="9879">Kalara</option>
+                <option value="16636">Kalpana Nagar</option>
+                <option value="9880">Kamla nagar</option>
+                <option value="9881">Kamla park</option>
+                <option value="16637">Karamveer Nagar</option>
+                <option value="16638">Karond</option>
+                <option value="16639">Kasturba Nagar</option>
+                <option value="16591">Katara Hills</option>
+                <option value="9893">Kurana</option>
+                <option value="9894">Kutakipura</option>
+                <option value="9895">Kuthar</option>
+                <option value="16643">Laharpur</option>
+                <option value="9896">Lalariya</option>
+                <option value="9902">Mahaveer nagar</option>
+                <option value="16648">Mandakini Colony</option>
+                <option value="16223">Mandi deep</option>
+                <option value="9903">Mangal garh</option>
+                <option value="9904">Meghra kalan</option>
+                <option value="9905">Misrod</option>
+                <option value="16649">Misrod</option>
+                <option value="16646">MP Nagar</option>
+                <option value="9717">Mp nagar</option>
+                <option value="9906">Mungalia chhap</option>
+                <option value="16650">Mungalia Kot</option>
+                <option value="9907">Mungaliya hatt</option>
+                <option value="9908">Nabibagh</option>
+                <option value="9909">Naya samund</option>
+                <option value="9910">Nayapura</option>
+                <option value="9911">Nazirabad</option>
+                <option value="16651">Neelbad</option>
+                <option value="16652">Nehru Nagar</option>
+                <option value="16653">New Market</option>
+                <option value="9912">Nishatpura</option>
+                <option value="9913">North t.t.nagar</option>
+                <option value="9914">Old secretriate</option>
+                <option value="16654">Pallavi Nagar</option>
+                <option value="16655">Paraspar Colony</option>
+                <option value="9915">Parwaliya sadak</option>
+                <option value="16656">Patel Nagar</option>
+                <option value="16657">Phanda</option>
+                <option value="16658">Phanda Kala</option>
+                <option value="9916">Pipal khedi</option>
+                <option value="9917">Pipaliya jaheerpeer</option>
+                <option value="9918">Piplani</option>
+                <option value="16659">Professors Colony</option>
+                <option value="9921">Raipur</option>
+                <option value="16661">Raisen Road</option>
+                <option value="16224">Raisin road</option>
+                <option value="9922">Raj bhawan</option>
+                <option value="9927">S.i. line</option>
+                <option value="16664">Saket Nagar</option>
+                <option value="16588">Salaiya</option>
+                <option value="16665">Samardha</option>
+                <option value="16666">Sankhedi</option>
+                <option value="16667">Sant Ashram Nagar</option>
+                <option value="9928">Satpura</option>
+                <option value="16668">Sector-B Indrapuri</option>
+                <option value="16669">Sehore</option>
+                <option value="16679">Subhash Colony</option>
+                <option value="9939">Subhash nagar</option>
+                <option value="9940">Sukaliya</option>
+                <option value="9941">Sukhi sewania</option>
+                <option value="9942">Suraj nagar</option>
+                <option value="9943">Tara sewaniya</option>
+                <option value="9944">Tarawali kalan</option>
+                <option value="9945">Tila khedi</option>
+                <option value="9946">Trilanga</option>
+                <option value="16681">Trilanga</option>
+                <option value="9947">Tulsi nagar</option>
+                <option value="9948">Tumada</option>
+                <option value="9949">University</option>
+                <option value="16682">Vaishali Nagar</option>
+                <option value="9950">Vallabh bhawan</option>
+                <option value="16683">Zone-I Bhopal</option>
+              </select>
+            </div>
+            <div>
+              <!-- SEARCH BHK -->
+              <select id="select-bhk" required>
+                <option value="">BHK:</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div>
+              <!-- SEARCH MIN BUDGET -->
+              <select id="select-min-budget" required>
+                <option value="">Min Budget:</option>
+                <option value="500000">5 Lac</option>
+                <option value="1000000">10 Lac</option>
+                <option value="2000000">20 Lac</option>
+                <option value="3000000">30 Lac</option>
+                <option value="4000000">40 Lac</option>
+                <option value="5000000">50 Lac</option>
+                <option value="6000000">60 Lac</option>
+                <option value="7000000">70 Lac</option>
+                <option value="8000000">80 Lac</option>
+                <option value="10000000">1 Cr</option>
+                <option value="12000000">1.2 Cr</option>
+                <option value="14000000">1.4 Cr</option>
+                <option value="16000000">1.6 Cr</option>
+                <option value="18000000">1.8 Cr</option>
+                <option value="20000000">2 Cr</option>
+                <option value="23000000">2.3 Cr</option>
+                <option value="26000000">2.6 Cr</option>
+                <option value="29000000">2.9 Cr</option>
+                <option value="30000000">3 Cr</option>
+                <option value="35000000">3.5 Cr</option>
+                <option value="40000000">4 Cr</option>
+                <option value="45000000">4.5 Cr</option>
+                <option value="50000000">5 Cr</option>
+                <option value="100000000">10 Cr</option>
+                <option value="200000000">20 Cr</option>
+                <option value="500000000">50 Cr</option>
+              </select>
+            </div>
+            <div>
+              <!-- SEARCH MAX BUDGET -->
+              <select id="select-max-budget" required>
+                <option value="">Max Budget:</option>
+                <option value="500000">5 Lac</option>
+                <option value="1000000">10 Lac</option>
+                <option value="2000000">20 Lac</option>
+                <option value="3000000">30 Lac</option>
+                <option value="4000000">40 Lac</option>
+                <option value="5000000">50 Lac</option>
+                <option value="6000000">60 Lac</option>
+                <option value="7000000">70 Lac</option>
+                <option value="8000000">80 Lac</option>
+                <option value="10000000">1 Cr</option>
+                <option value="12000000">1.2 Cr</option>
+                <option value="14000000">1.4 Cr</option>
+                <option value="16000000">1.6 Cr</option>
+                <option value="18000000">1.8 Cr</option>
+                <option value="20000000">2 Cr</option>
+                <option value="23000000">2.3 Cr</option>
+                <option value="26000000">2.6 Cr</option>
+                <option value="29000000">2.9 Cr</option>
+                <option value="30000000">3 Cr</option>
+                <option value="35000000">3.5 Cr</option>
+                <option value="40000000">4 Cr</option>
+                <option value="45000000">4.5 Cr</option>
+                <option value="50000000">5 Cr</option>
+                <option value="100000000">10 Cr</option>
+                <option value="200000000">20 Cr</option>
+                <option value="500000000">50 Cr</option>
+              </select>
+            </div>
+            <div>
+              <!-- SEARCH TRANSACTION -->
+              <select id="select-transaction" required>
+                <option value="">Transaction:</option>
+                <option value="1">New</option>
+                <option value="2">Resale</option>
+                <option value="3">Pre Launch</option>
+                <option value="4">Pre Lease/ Pre Rented</option>
+                <option value="5">Individual</option>
+                <option value="6">Company</option>
+                <option value="8">Group Booking</option>
+                <option value="9">Individual / Company</option>
+              </select>
+            </div>
+            <!-- SEARCH RANGE SLIDER -->
+            <div class="range__slider">
+              <div class="slider">
+                <div class="progress"></div>
+              </div>
+              <div class="range__input">
+                <input
+                  type="range"
+                  class="range__min"
+                  min="0"
+                  max="10000"
+                  value="2500"
+                  step="1"
+                />
+                <input
+                  type="range"
+                  class="range__max"
+                  min="0"
+                  max="10000"
+                  value="7500"
+                  step="1"
+                />
+              </div>
+              <div class="area__content">
+                <p class="area__field">
+                  <span class="area__value">2500</span> sq ft
+                </p>
+                <p class="area__field">
+                  <span class="area__value">7500</span> sq ft
+                </p>
+              </div>
+            </div>
+            <button type="submit" class="btn search__btn">Search</button>
+          </form>
+        </div>
+      </section>
+      <!-- =========== FEATURED PROPERTY =========== -->
+      <section class="section__property text-center section__space">
+        <div class="container">
+          <h2 class="heading__secondary">FEATURED PROPERTIES</h2>
+        </div>
+        <div class="properties container grid grid-3-cols margin-bottom-md">
+          <!-- Property 01 -->
+          <div class="property__card">
+            <div class="property__img-container">
+              <img
+                src="./img/properties/property-1.jpg"
+                alt="Agricultural Land, House Property"
+                class="property__img"
+              />
+              <span class="property__img-tag">Featured</span>
+              <div class="property__img-overlay"></div>
+            </div>
+            <div class="property__content">
+              <div class="property__tags flex">
+                <span class="property__tag tag__sale">For Sale</span>
+              </div>
+              <p class="property__title">33 Acres Agricultural Land</p>
+              <p class="property__location">
+                <ion-icon
+                  name="location-outline"
+                  class="property__icon"
+                ></ion-icon>
+                <span>New Market</span>
+              </p>
+              <ul class="property__attributes">
+                <li class="property__attribute">
+                  <ion-icon name="locate-outline"></ion-icon>
+                  <span> <strong>33</strong> Acres</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span> <strong> Urgent </strong>Sale</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <span>
+                    <strong>Resale</strong>
+                  </span>
+                </li>
+              </ul>
+              <button class="btn property__btn">Contact Dealer</button>
+            </div>
+          </div>
+          <!-- Property 02 -->
+
+          <div class="property__card">
+            <div class="property__img-container">
+              <img
+                src="./img/properties/property-2.jpg"
+                alt="White House Apartment, Residential Property"
+                class="property__img"
+              />
+              <span class="property__img-tag">Featured</span>
+              <div class="property__img-overlay"></div>
+            </div>
+            <div class="property__content">
+              <div class="property__tags flex">
+                <span class="property__tag tag__sale">For Sale</span>
+              </div>
+              <p class="property__title">3800 Sq.Ft. 4 BHK Residential House</p>
+              <p class="property__location">
+                <ion-icon
+                  name="location-outline"
+                  class="property__icon"
+                ></ion-icon>
+                <span>Bhojpur</span>
+              </p>
+              <ul class="property__attributes">
+                <li class="property__attribute">
+                  <ion-icon name="locate-outline"></ion-icon>
+                  <span> <strong>3800</strong> Sq.Ft.</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span> <strong> Urgent </strong>Sale</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <span>
+                    <strong>Resale</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Property 03 -->
+          <div class="property__card">
+            <div class="property__img-container">
+              <img
+                src="./img/properties/property-3.jpg"
+                alt="Residential Property, "
+                class="property__img"
+              />
+              <span class="property__img-tag">Featured</span>
+              <div class="property__img-overlay"></div>
+            </div>
+            <div class="property__content">
+              <div class="property__tags flex">
+                <span class="property__tag tag__rent">For Rent</span>
+              </div>
+              <p class="property__title">1600 Sq.Ft. 2 BHK Residential Home</p>
+              <p class="property__location">
+                <ion-icon
+                  name="location-outline"
+                  class="property__icon"
+                ></ion-icon>
+                <span>Indra Vihar Colony</span>
+              </p>
+              <ul class="property__attributes">
+                <li class="property__attribute">
+                  <ion-icon name="locate-outline"></ion-icon>
+                  <span> <strong>1600</strong> Sq.Ft.</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span> <strong> Immediately </strong>Rent</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <span>
+                    <strong>Available</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Property 04 -->
+          <div class="property__card">
+            <div class="property__img-container">
+              <img
+                src="./img/properties/property-4.jpg"
+                alt="2 BHK Residential Property"
+                class="property__img"
+              />
+              <span class="property__img-tag">Featured</span>
+              <div class="property__img-overlay"></div>
+            </div>
+            <div class="property__content">
+              <div class="property__tags flex">
+                <span class="property__tag tag__rent">For Rent</span>
+              </div>
+              <p class="property__title">1200 Sq.Ft. 2 BHK Residential House</p>
+              <p class="property__location">
+                <ion-icon
+                  name="location-outline"
+                  class="property__icon"
+                ></ion-icon>
+                <span>Kamla park</span>
+              </p>
+              <ul class="property__attributes">
+                <li class="property__attribute">
+                  <ion-icon name="locate-outline"></ion-icon>
+                  <span> <strong>1200</strong> Sq.Ft.</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span> <strong> Immediately </strong>Rent</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <span>
+                    <strong>Available</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Property 05 -->
+          <div class="property__card">
+            <div class="property__img-container">
+              <img
+                src="./img/properties/property-5.jpg"
+                alt="Public speaker live speech"
+                class="property__img"
+              />
+              <span class="property__img-tag">Featured</span>
+              <div class="property__img-overlay"></div>
+            </div>
+            <div class="property__content">
+              <div class="property__tags flex">
+                <span class="property__tag tag__sale">For Sale</span>
+              </div>
+              <p class="property__title">2100 Sq.Ft. 3 BHK Residential Home</p>
+              <p class="property__location">
+                <ion-icon
+                  name="location-outline"
+                  class="property__icon"
+                ></ion-icon>
+                <span>Sehore</span>
+              </p>
+              <ul class="property__attributes">
+                <li class="property__attribute">
+                  <ion-icon name="locate-outline"></ion-icon>
+                  <span> <strong>2100</strong> Sq.Ft.</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span> <strong> Urgent </strong>Sale</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <span>
+                    <strong>Resale</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Property 06 -->
+          <div class="property__card">
+            <div class="property__img-container">
+              <img
+                src="./img/properties/property-6.jpg"
+                alt="Public speaker live speech"
+                class="property__img"
+              />
+              <span class="property__img-tag">Featured</span>
+              <div class="property__img-overlay"></div>
+            </div>
+            <div class="property__content">
+              <div class="property__tags flex">
+                <span class="property__tag tag__sale">For Sale</span>
+              </div>
+              <p class="property__title">
+                1100 Sq.Ft. 2 BHK Residential Apartment
+              </p>
+              <p class="property__location">
+                <ion-icon
+                  name="location-outline"
+                  class="property__icon"
+                ></ion-icon>
+                <span>Danish Nagar</span>
+              </p>
+              <ul class="property__attributes">
+                <li class="property__attribute">
+                  <ion-icon name="locate-outline"></ion-icon>
+                  <span> <strong>1100</strong> Sq.Ft.</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span> <strong> Urgent </strong>Sale</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <span>
+                    <strong>Resale</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Property 07 -->
+          <div class="property__card">
+            <div class="property__img-container">
+              <img
+                src="./img/properties/property-7.jpg"
+                alt="Public speaker live speech"
+                class="property__img"
+              />
+              <span class="property__img-tag">Featured</span>
+              <div class="property__img-overlay"></div>
+            </div>
+            <div class="property__content">
+              <div class="property__tags flex">
+                <span class="property__tag tag__sale">For Sale</span>
+              </div>
+              <p class="property__title">2200 Sq.Ft. 3 BHK Residential House</p>
+              <p class="property__location">
+                <ion-icon
+                  name="location-outline"
+                  class="property__icon"
+                ></ion-icon>
+                <span>Sehore</span>
+              </p>
+              <ul class="property__attributes">
+                <li class="property__attribute">
+                  <ion-icon name="locate-outline"></ion-icon>
+                  <span> <strong>2200</strong> Sq.Ft.</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span> <strong> Urgent </strong>Sale</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <span>
+                    <strong>Resale</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Property 08 -->
+          <div class="property__card">
+            <div class="property__img-container">
+              <img
+                src="./img/properties/property-8.jpg"
+                alt="Public speaker live speech"
+                class="property__img"
+              />
+              <span class="property__img-tag">Featured</span>
+              <div class="property__img-overlay"></div>
+            </div>
+            <div class="property__content">
+              <div class="property__tags flex">
+                <span class="property__tag tag__rent">For Rent</span>
+              </div>
+              <p class="property__title">
+                2400 Sq.Ft. 4 BHK Residential Apartment
+              </p>
+              <p class="property__location">
+                <ion-icon
+                  name="location-outline"
+                  class="property__icon"
+                ></ion-icon>
+                <span>Bhojpur</span>
+              </p>
+              <ul class="property__attributes">
+                <li class="property__attribute">
+                  <ion-icon name="locate-outline"></ion-icon>
+                  <span> <strong>2400</strong> Sq.Ft.</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span> <strong> Immediately </strong>Rent</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <span>
+                    <strong>Available</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Property 09 -->
+          <div class="property__card">
+            <div class="property__img-container">
+              <img
+                src="./img/properties/property-9.jpg"
+                alt="Public speaker live speech"
+                class="property__img"
+              />
+              <span class="property__img-tag">Featured</span>
+              <div class="property__img-overlay"></div>
+            </div>
+            <div class="property__content">
+              <div class="property__tags flex">
+                <span class="property__tag tag__sale">For Sale</span>
+              </div>
+              <p class="property__title">3300 Sq.Ft. 4 BHK Residential Home</p>
+              <p class="property__location">
+                <ion-icon
+                  name="location-outline"
+                  class="property__icon"
+                ></ion-icon>
+                <span>Kamla Park</span>
+              </p>
+              <ul class="property__attributes">
+                <li class="property__attribute">
+                  <ion-icon name="locate-outline"></ion-icon>
+                  <span> <strong>3300</strong> Sq.Ft.</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span> <strong> Urgent </strong>Sale</span>
+                </li>
+                <li class="property__attribute">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <span>
+                    <strong>Resale</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== SERVICES =========== -->
+      <section class="section__service section__space">
+        <div class="container text-center">
+          <h2 class="heading__secondary">WHAT ARE YOU LOOKING FOR?</h2>
+        </div>
+        <div class="container grid grid-4-cols margin-bottom-md">
+          <div class="service__card">
+            <ion-icon name="home-outline" class="service__icon"></ion-icon>
+            <p class="service__title">Residential Home</p>
+            <p class="service__text">
+              Find verified listings of luxury residential apartments for sale /
+              Rent posted from verified owner.
+            </p>
+          </div>
+          <div class="service__card">
+            <ion-icon
+              name="storefront-outline"
+              class="service__icon"
+            ></ion-icon>
+            <p class="service__title">Commercial Space</p>
+            <p class="service__text">
+              Get details of all the Commercial property For Sale in prime
+              location, Office Space, Shops, Showrooms etc.
+            </p>
+          </div>
+          <div class="service__card">
+            <ion-icon name="location-outline" class="service__icon"></ion-icon>
+            <p class="service__title">Quality Land</p>
+            <p class="service__text">
+              Buy, rent or sale of residential and commercial land in your
+              location.
+            </p>
+          </div>
+          <div class="service__card">
+            <ion-icon name="desktop-outline" class="service__icon"></ion-icon>
+            <p class="service__title">Office Space</p>
+            <p class="service__text">
+              Give Your Business a Presence in Prime Location, Witness the most
+              luxurious working atmosphere.
+            </p>
+          </div>
+        </div>
+        <div class="container text-center">
+          <button class="btn service__btn">Discover More</button>
+        </div>
+      </section>
+      <section class="section__testimonial section__space" id="testimonials">
+        <div class="container text-center">
+          <h2 class="heading__secondary">Our Testimonials</h2>
+        </div>
+        <div class="container testimonial__carousel">
+          <div
+            class="testimonial__card-container"
+            id="testimonial-card-container"
+          >
+            <!-- TESTIMONIAL 01 -->
+            <figure class="testimonial__card">
+              <img
+                class="testimonial__img"
+                alt="Photo of customer Ben Hadley"
+                src="img/customers/ben.jpg"
+              />
+              <div class="testimonial__text-container">
+                <blockquote class="testimonial__text">
+                  We sold our properties through them. We were completely
+                  satisfied to our entire satisfaction. We strongly recommend to
+                  deal with them as we had very excellent results.
+                </blockquote>
+                <p class="testimonial__name">&mdash; Rohit Jain</p>
+              </div>
+            </figure>
+            <!-- TESTIMONIAL 02 -->
+            <figure class="testimonial__card">
+              <img
+                class="testimonial__img"
+                alt="Photo of customer Ben Hadley"
+                src="img/customers/ben.jpg"
+              />
+              <div class="testimonial__text-container">
+                <blockquote class="testimonial__text">
+                  They are very professional and helpful. Their team guided me
+                  on legal points. Overall I am highly satisfied. Highly
+                  recommended.
+                </blockquote>
+                <p class="testimonial__name">&mdash; Joseph Jaggi</p>
+              </div>
+            </figure>
+            <!-- TESTIMONIAL 03 -->
+            <figure class="testimonial__card">
+              <img
+                class="testimonial__img"
+                alt="Photo of customer Ben Hadley"
+                src="img/customers/ben.jpg"
+              />
+              <div class="testimonial__text-container">
+                <blockquote class="testimonial__text">
+                  I had a property in Shiv Nagar which I had to sell. Mr Anurag
+                  helped me with it. His dealings were very professional and
+                  honest. Everything went on as I had expected.
+                </blockquote>
+                <p class="testimonial__name">&mdash; Harry Singh</p>
+              </div>
+            </figure>
+            <!-- TESTIMONIAL 04 -->
+            <figure class="testimonial__card">
+              <div class="testimonial__img-container">
+                <img
+                  class="testimonial__img"
+                  alt="Photo of customer Ben Hadley"
+                  src="img/customers/ben.jpg"
+                />
+              </div>
+              <div class="testimonial__text-container">
+                <blockquote class="testimonial__text">
+                  Mr. Anurag from Sarvopy Properties helped us with proper
+                  search of flats as per our requirements. He further helped us
+                  with registration of property once finalized. We wish him and
+                  the firm all the best for future endeavors.
+                </blockquote>
+                <p class="testimonial__name">&mdash; Jonas Smith</p>
+              </div>
+            </figure>
+          </div>
+          <!-- SLIDE ARROWS -->
+          <div class="arrows">
+            <div class="arrow prev" id="testimonial-left-arrow">
+              <span class="svg svg__arrow-left">
+                <svg
+                  version="1.1"
+                  id="svg6-Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="14px"
+                  height="26px"
+                  viewBox="0 0 14 26"
+                  enable-background="new 0 0 14 26"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"
+                  />
+                </svg>
+                <span class="alt sr-only"></span>
+              </span>
+            </div>
+            <div class="arrow next" id="testimonial-right-arrow">
+              <span class="svg svg__arrow-right">
+                <svg
+                  version="1.1"
+                  id="svg7-Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="14px"
+                  height="26px"
+                  viewBox="0 0 14 26"
+                  enable-background="new 0 0 14 26"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"
+                  />
+                </svg>
+                <span class="alt sr-only"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== POPULAR PLACES =========== -->
+      <section class="section__place section__space">
+        <div class="container text-center">
+          <h2 class="heading__secondary">Popular Places</h2>
+        </div>
+        <div class="place__container container">
+          <div class="place__card">
+            <div class="place__content">
+              <span class="place__text">2 Properties</span>
+              <h3 class="place__title">Sehore</h3>
+            </div>
+            <img
+              src="./img/places/place-1.jpg"
+              alt="New Palace Beautiful Place"
+              class="place__img"
+            />
+          </div>
+          <div class="place__card">
+            <div class="place__content">
+              <span class="place__text">3 Properties</span>
+              <h3 class="place__title">Bhojpur</h3>
+            </div>
+            <img
+              src="./img/places/place-2.jpg"
+              alt="Van Vihar Market, Beautiful Shopping Day Photo"
+              class="place__img"
+            />
+          </div>
+          <div class="place__card place-col-3">
+            <div class="place__content">
+              <span class="place__text">2 Properties</span>
+              <h3 class="place__title">Kamla Nagar</h3>
+            </div>
+            <img
+              src="./img/places/place-3.jpg"
+              alt="Most visited City Spiritual Temple"
+              class="place__img"
+            />
+          </div>
+          <div class="place__card place-col-4">
+            <div class="place__content">
+              <span class="place__text">1 Properties</span>
+              <h3 class="place__title">Indra Vihar Colony</h3>
+            </div>
+            <img
+              src="./img/places/place-4.jpg"
+              alt="Running Water Circle"
+              class="place__img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section__cta section__space">
+        <div class="container flex cta__container">
+          <p class="cta__text">Looking To Sell Or Rent Your Property?</p>
+          <a href="#" class="cta__btn btn">
+            <span class="btn__inner">SUBMIT NOW</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section__space">
+      <div class="container grid__footer">
+        <div class="contact__col footer__nav">
+          <span class="footer__title">CONTACT US</span>
+          <ul class="footer__list">
+            <li>
+              <p class="address">
+                <ion-icon
+                  name="location-outline"
+                  class="footer__icon"
+                ></ion-icon>
+                <span>04, Branson Colony, Press Complex Zone, 94107</span>
+              </p>
+            </li>
+            <li>
+              <a class="footer__link" href="tel:+91-8770854933">
+                <ion-icon name="call-outline" class="footer__icon"></ion-icon>
+                <span>+91-8770854933</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="mailto:hello@omnifood.com">
+                <ion-icon name="mail-outline" class="footer__icon"></ion-icon>
+                <span>contact@sarvopyproperties.com</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <span class="footer__title">LINKS</span>
+          <ul class="footer__list">
+            <li>
+              <a class="footer__link" href="#">Home</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Properties</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Services</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Submit Property</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__social-col footer__nav">
+          <span class="footer__title">CONNECT US</span>
+          <ul class="footer__list">
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon name="logo-instagram" class="footer__icon"></ion-icon>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon name="logo-facebook" class="footer__icon"></ion-icon>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon name="logo-twitter" class="footer__icon"></ion-icon>
+                <span>Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <p class="footer__copyright">
+          Copyright &copy; 2022 by Sarvopy Properties Pvt Ltd. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- =========== SCROLL TOP =========== -->
+    <button class="scroll__top icon" id="scroll-top-btn">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </button>
+    <script src="./js/testimonials.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

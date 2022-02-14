@@ -1,0 +1,29 @@
+.community__quote {
+  position: relative;
+  padding-left: 1.6rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 100;
+  margin-bottom: 1.6rem;
+}
+
+.community__quote:before {
+  color: var(--primary-color);
+  font-family: inherit;
+  font-size: 3.2rem;
+}
+
+.community__quote:before {
+  content: '\201c';
+}
+
+.community__quote cite {
+  font-size: 1.2rem;
+  text-align: center;
+  top: 50%
+}
+
+.community__quote cite:before {
+  content: ' \2015 '
+}

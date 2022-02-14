@@ -1,0 +1,268 @@
+
+/* =========== VARIABLES CSS ===========*/
+:root {
+  --header-height: 9.6rem;
+
+  /* =========== COLORS =========== */
+  --body-color: hsl(0, 0%, 99%);
+  --border-color: hsl(9, 100%, 94%);
+  --button-color: #FF5A3C;
+  --button-color-alt: #ffefec;
+  --container-color: #fff;
+  --container-color-alt: #ffefec;
+  --hover-color: #e65136;
+  --outline-color: rgba(255, 89, 60, 0.5);
+  --primary-color: #FF5A3C;
+  --text-color: #555;
+  --text-color-light: #777;
+  --title-color: #333;
+
+  /* =========== FONT AND TYPOGRAPHY =========== */
+  --body-font: 'Lora', serif;
+  --h1-font-size: 4.4rem;
+  --h2-font-size: 3.2rem;
+  --h3-font-size: 2.4rem;
+  --normal-font-size: 1.8rem;
+  --small-font-size: 1.6rem;
+  --smaller-font-size: 1.2rem;
+  
+/* =========== FONT WEIGHT =========== */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+  
+/* =========== Z-INDEX =========== */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+
+/* =========== RESETS & BASE =========== */
+html {
+  box-sizing: border-box;
+  /* Percentage of user's browsers font-size setting */
+  /* font-size: 10px / 16px = 0.625 = 62.5%; */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem var(--outline-color);
+}
+
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: inherit;
+  font-weight: var(--font-normal);
+}
+
+body {
+  background: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  /* overflow-x: hidden; */
+}
+
+h1, h2, h3, h4{
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+  letter-spacing: -0.5px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* =========== GENERAL REUSABLE CLASSES =========== */
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.flex{
+  align-items: center;
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+} */
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-center-v {
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: var(--h1-font-size);
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading__secondary {
+  font-size: var(--h2-font-size);
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.heading-tertiary {
+  font-size: var(--h3-font-size);
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--primary-color);
+}
+
+
+/* HELPER/SETTINGS CLASSES */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.section__space{
+  padding: 6.4rem 0;
+}
+
+.strong {
+  font-weight: 500;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* =========== BUTTONS =========== */
+.btn,
+.btn:link,
+.btn:visited {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  font-family: inherit;
+  text-decoration: none;
+  transition: all 300ms;
+  background-color: var(--button-color);
+  color: var(--button-color-alt);
+}
+
+/* CTA ANIMATED BUTTONS */
+.cta__btn{
+  position: relative;
+}
+
+.cta__btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--button-color-alt);
+  z-index: 1;
+  opacity: 0;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+
+.cta__btn .btn__inner {
+  position: relative;
+  z-index: 2;
+}
+
+.cta__btn:hover {
+  color: var(--primary-color);
+  transition: color 0.1s linear 0s;
+}
+
+.cta__btn:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+
+/* SECTION BUTTONS */
+.container__btn:hover,
+.search__btn:hover,
+.property__btn:hover,
+.place__btn:hover,
+.service__btn:hover{
+  background-color: var(--button-color-alt);
+  box-shadow: inset 0 0 0 3px var(--button-color);
+  color: var(--button-color);
+}
