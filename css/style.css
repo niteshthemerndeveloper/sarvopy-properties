@@ -66,7 +66,7 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 8rem;
+  height: 9.6rem;
   padding-top: 0;
   padding-bottom: 0;
   background-color: #190906;
@@ -97,9 +97,9 @@
 
 /* =========== HERO & Carousel Slideshow =========== */
 /* Section Space is defined in general.css file */
+
 .carousel {
-  height: 80vh;
-  /* need to fix this */
+  height: calc(100vh - 9.6rem);
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -108,15 +108,7 @@
 
 .carousel img {
   object-fit: cover;
-  width: 100%;
-}
-
-.carousel .slideshow__inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
 }
 
 .slides {
@@ -145,12 +137,11 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 80%;
   text-align: center;
   z-index: 2;
 }
@@ -206,6 +197,7 @@
 .section__search{
   background-color: #ffefec;
 }
+
 .search__form select {
   width: 100%;
   padding: 1.2rem;
@@ -230,8 +222,8 @@
 
 .slider .progress{
   height: 100%;
-  left: 25%;
-  right: 25%;
+  left: 0%;
+  right: 0%;
   position: absolute;
   border-radius: 0.5rem;
   background: var(--primary-color);
@@ -337,10 +329,6 @@ input[type="range"]::-moz-range-thumb{
   transform: scale(1);
 }
 
-.property__content {
-  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
-}
-
 .property__tags {
   gap: 0.4rem;
   margin-bottom: 1.2rem;
@@ -373,20 +361,27 @@ input[type="range"]::-moz-range-thumb{
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1.6rem;
+  text-align: left;
 }
 
 .property__location{
   align-items: center;
   display: flex;
   font-size: 2rem;
-  gap: 1rem;
+  gap: 1.2rem;
   margin-bottom: 3.2rem;
+}
+
+.property__content {
+  padding: 3.2rem 3.2rem 4.8rem 3.2rem;
+  text-align: left;
 }
 
 .property__attributes {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 3.2rem;
 }
 
 .property__attribute {
@@ -405,6 +400,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .property__btn{
+
   font-size: 2rem;
 }
 
@@ -451,7 +447,7 @@ input[type="range"]::-moz-range-thumb{
             rgba(25, 9, 6, 0.64),
             rgba(25, 9, 6, 0.64)
           ),
-          url(../img/hero/apartment-02.jpg);
+          url(../img/testimonial-bg.jpg);
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -480,7 +476,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .testimonial__card{
-  margin: 0 auto;
+  margin: auto;
   width: 50rem;
   padding: 0 4.8rem;
 }
@@ -560,6 +556,7 @@ input[type="range"]::-moz-range-thumb{
 .place__container{
   display: grid;
   grid-template-columns: 27fr 27fr 46fr;
+  /* grid-template-rows: auto 30rem; */
 }
 
 .place__card{
@@ -568,7 +565,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .place__card:hover .place__img{
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 .place__content{
@@ -595,11 +592,35 @@ input[type="range"]::-moz-range-thumb{
   padding: 0.6rem 0.8rem;
 }
 
+.place__img-container{
+  overflow: hidden;
+}
+
 .place__img{
   position: relative;
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition: all 300ms;
+  max-width: 100%;
   z-index: -1;
+}
+
+.place-col-3 .place__img-container{
+  height: 100%;
+}
+
+.place-col-3 .place__img-col-3{
+  background: url('../img/places/place-3.jpg');
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms;
+  transform: scale(1.2);
+  z-index: -1;
+}
+
+.place-col-3:hover .place__img-col-3{
+  transform: scale(1.1);
 }
 
 .place-col-3{
@@ -637,9 +658,10 @@ input[type="range"]::-moz-range-thumb{
 
 .grid__footer{
   display: grid;
-  grid-template-columns: 40fr 30fr 30fr;
+  grid-template-columns: 50fr 25fr 25fr;
+  column-gap: 3.2rem;
   border-bottom: 1px solid rgba(170, 170, 170, 0.5);
-  padding: 3.2rem 0;
+  padding: 3.2rem 1.6rem;
 }
 
 .footer__nav:nth-child(2){
@@ -661,7 +683,8 @@ input[type="range"]::-moz-range-thumb{
 .footer__link > .footer__icon,
 .address > .footer__icon{
   margin-right: 0.8rem;
-  transform: translateY(12%);
+  /* transform: translateY(12%);
+  Added in general.css with other icons */
 }
 
 .footer__list{

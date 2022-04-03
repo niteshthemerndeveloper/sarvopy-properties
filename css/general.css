@@ -71,7 +71,7 @@ body {
   background: var(--body-color);
   color: var(--text-color);
   line-height: 1.6;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4{
@@ -84,11 +84,16 @@ ul {
   list-style: none;
 }
 
+ol {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -176,9 +181,10 @@ button {
 }
 
 .list-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 1.8rem;
+  height: 1.8rem;
   color: var(--primary-color);
+  margin-right: 0.8rem;
 }
 
 
@@ -265,4 +271,35 @@ button {
   background-color: var(--button-color-alt);
   box-shadow: inset 0 0 0 3px var(--button-color);
   color: var(--button-color);
+}
+
+/* =========== BREADCRUMBS =========== */
+.pages__breadcrumb{
+  justify-content: center;
+}
+
+.breadcrumb__list{
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.breadcrumb__divider,
+.list-icon,
+.footer__icon{
+  transform: translateY(12%);
+}
+
+.breadcrumb__link:link,
+.breadcrumb__link:visited,
+.breadcrumb__active,
+.breadcrumb__icon{
+  color: #ffefec;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: all 300ms;
+}
+
+.breadcrumb__link:hover,
+.breadcrumb__link:active{
+  color: var(--primary-color);
 }

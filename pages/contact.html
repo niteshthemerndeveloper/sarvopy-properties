@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- RESPONSIBLE FOR RESPONSIVENESS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sarvopy Properties " />
+    <!-- =========== FAVICONS =========== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <!-- =========== GOOGLE FONTS =========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- =========== CSS STYLES =========== -->
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+    <link rel="stylesheet" href="../css/utils.css" />
+    <link rel="stylesheet" href="../css/pages.css" />
+    <!-- =========== ICONS =========== -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- =========== COMPANY/WEBSITE TITLE =========== -->
+    <title>
+      Explore the Next Dream Property Available for Buy | Sell | Rent
+    </title>
+  </head>
+  <body>
+    <!-- =========== HEADER =========== -->
+    <header class="header__container">
+      <nav class="navbar__container flex">
+        <!-- COMPANY LOGO -->
+        <a href="#">
+          <img
+            class="navbar__logo-img"
+            alt="Sarvopy Properties logo"
+            src="../img/sarvopy-properties-logo.png"
+          />
+        </a>
+        <!-- NAVIGATION -->
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list flex">
+            <li class="navbar__item">
+              <a href="../index.html" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./submit.html" class="navbar__link"
+                >Submit Property</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="./contact.html" class="navbar__link">Contact</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./about.html" class="navbar__link">About</a>
+            </li>
+            <!-- NAVBAR CTA (CALL TO ACTION) -->
+            <li class="navbar__item">
+              <a href="./contact.html" class="btn cta__btn">
+                <span class="btn__inner">Free Property Tour</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- MOBILE NAVIGATION CONTROL BUTTONS -->
+        <button class="navbar__menu-btns">
+          <ion-icon
+            name="menu-outline"
+            class="navbar__menu-icon navbar__menu-bars"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            class="navbar__menu-icon navbar__menu-times"
+          ></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- =========== HERO =========== -->
+      <section class="section__hero-pages">
+        <div class="container">
+          <h1 class="pages__title text-center">CONTACT US</h1>
+          <!-- PAGES BREADCRUMB -->
+          <nav class="pages__breadcrumb flex">
+            <ol class="breadcrumb__list flex">
+              <li class="breadcrumb__item">
+                <a href="../index.html" class="breadcrumb__link">Home</a>
+              </li>
+              <li class="breadcrumb__divider">
+                <ion-icon
+                  name="chevron-forward-outline"
+                  class="breadcrumb__icon"
+                ></ion-icon>
+              </li>
+              <li class="breadcrumb__item">
+                <span class="breadcrumb__active">Contact Us</span>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <!-- =========== CONTACT US =========== -->
+      <section class="section__contact section__space" id="#contact">
+        <div class="container">
+          <span class="submit__form-title">
+            <strong>Get In Touch</strong> With Us
+          </span>
+          <form class="submit__form contact__grid">
+              <div>
+                <!-- CONTACT NAME -->
+                <label for="full-name">Full Name*</label>
+                <input id="full-name" type="text" required />
+              </div>
+              <div>
+                <!-- CONTACT EMAIL -->
+                <label for="email">Email*</label>
+                <input id="email" type="email" required />
+              </div>
+              <div>
+                <!-- CONTACT Message -->
+                <label for="address">Contact Message</label>
+                <textarea id="address" maxlength="80"> </textarea>
+              </div>
+              <button type="submit" class="btn submit__btn">FREE Property Tour</button>
+            </form>
+            <p class="contact__text">Thank you, we'll get in touch with you soon.</p>
+        </section>
+    </main>
+    <!-- =========== FOOTER =========== -->
+    <footer class="footer section__space">
+      <div class="container grid__footer">
+        <div class="contact__col footer__nav">
+          <span class="footer__title">CONTACT US</span>
+          <ul class="footer__list">
+            <li>
+              <p class="address">
+                <ion-icon
+                  name="location-outline"
+                  class="footer__icon"
+                ></ion-icon>
+                <span>04, Branson Colony, Press Complex Zone, 94107</span>
+              </p>
+            </li>
+            <li>
+              <a class="footer__link" href="tel:+91-8770854933">
+                <ion-icon name="call-outline" class="footer__icon"></ion-icon>
+                <span>+91-8770854933</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                href="mailto:contact@sarvopyproperties.com"
+              >
+                <ion-icon name="mail-outline" class="footer__icon"></ion-icon>
+                <span>contact@sarvopyproperties.com</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <span class="footer__title">LINKS</span>
+          <ul class="footer__list">
+            <li>
+              <a class="footer__link" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="footer__link" href="../index.html#featured"
+                >Properties</a
+              >
+            </li>
+            <li>
+              <a class="footer__link" href="../index.html#services">Services</a>
+            </li>
+            <li>
+              <a class="footer__link" href="./submit.html">Submit Property</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__social-col footer__nav">
+          <span class="footer__title">CONNECT US</span>
+          <ul class="footer__list">
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon name="logo-instagram" class="footer__icon"></ion-icon>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon name="logo-facebook" class="footer__icon"></ion-icon>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon name="logo-twitter" class="footer__icon"></ion-icon>
+                <span>Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <p class="footer__copyright">
+          Copyright &copy; 2022 by Sarvopy Properties Pvt Ltd. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- =========== SCROLL TOP =========== -->
+    <button class="scroll__top icon" id="scroll-top-btn">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </button>
+  </body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- RESPONSIBLE FOR RESPONSIVENESS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sarvopy Properties " />
+    <!-- =========== FAVICONS =========== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicons/favicon-32x32.png"
+    />
+    <!-- =========== GOOGLE FONTS =========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- =========== CSS STYLES =========== -->
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+    <link rel="stylesheet" href="../css/utils.css" />
+    <link rel="stylesheet" href="../css/pages.css" />
+    <!-- =========== ICONS =========== -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- =========== COMPANY/WEBSITE TITLE =========== -->
+    <title>
+      Explore the Next Dream Property Available for Buy | Sell | Rent
+    </title>
+  </head>
+  <body>
+    <!-- =========== HEADER =========== -->
+    <header class="header__container">
+      <nav class="navbar__container flex">
+        <!-- COMPANY LOGO -->
+        <a href="../index.html">
+          <img
+            class="navbar__logo-img"
+            alt="Sarvopy Properties logo"
+            src="../img/sarvopy-properties-logo.png"
+          />
+        </a>
+        <!-- NAVIGATION -->
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list flex">
+            <li class="navbar__item">
+              <a href="../index.html" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./submit.html" class="navbar__link">Submit Property</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./contact.html" class="navbar__link">Contact</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./about.html" class="navbar__link">About</a>
+            </li>
+            <!-- NAVBAR CTA (CALL TO ACTION) -->
+            <li class="navbar__item">
+              <a href="./contact.html" class="btn cta__btn">
+                <span class="btn__inner">Free Property Tour</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- MOBILE NAVIGATION CONTROL BUTTONS -->
+        <button class="navbar__menu-btns">
+          <ion-icon
+            name="menu-outline"
+            class="navbar__menu-icon navbar__menu-bars"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            class="navbar__menu-icon navbar__menu-times"
+          ></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- =========== HERO =========== -->
+      <section class="section__hero-pages">
+        <div class="container">
+          <h1 class="pages__title text-center">SUBMIT PROPERTY</h1>
+          <!-- PAGES BREADCRUMB -->
+          <nav class="pages__breadcrumb flex">
+            <ol class="breadcrumb__list flex">
+              <li class="breadcrumb__item">
+                <a href="../index.html" class="breadcrumb__link">Home</a>
+              </li>
+              <li class="breadcrumb__divider">
+                <ion-icon
+                  name="chevron-forward-outline"
+                  class="breadcrumb__icon"
+                ></ion-icon>
+              </li>
+              <li class="breadcrumb__item">
+                <span class="breadcrumb__active">Submit Property</span>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <!-- =========== SUBMIT PROPERTIES =========== -->
+      <section class="section__submit section__space">
+        <div class="container">
+          <span class="submit__form-title">
+            <strong>PROPERTY</strong> INFORMATION
+          </span>
+          <form class="submit__form">
+            <div class="form__group grid grid-3-cols">
+              <div>
+                <!-- SUBMIT NAME -->
+                <label for="full-name">Full Name*</label>
+                <input id="full-name" type="text" required />
+              </div>
+              <div>
+                <!-- SUBMIT EMAIL -->
+                <label for="email">Email*</label>
+                <input id="email" type="email" required />
+              </div>
+              <div>
+                <!-- SUBMIT PURPOSE -->
+                <label for="select-purpose">For Buy/Sell*</label>
+                <select id="select-purpose" required>
+                  <option value="">Select:</option>
+                  <option value="buy">For Buy</option>
+                  <option value="sell">For Sell</option>
+                </select>
+              </div>
+              <div>
+                <!-- SUBMIT PROPERTY -->
+                <label for="select-property">Property Type*</label>
+                <select id="select-property">
+                  <option value="">Select:</option>
+                  <option value="residential-apartment">
+                    Residential Apartment
+                  </option>
+                  <option value="residential-studio">
+                    Residential Studio Apartment
+                  </option>
+                  <option value="commercial-apartment">
+                    Commercial Apartment
+                  </option>
+                  <option value="commercial-farm">Commercial Farm House</option>
+                  <option value="industrial-land">Industrial Land</option>
+                  <option value="agricultural-land">Agricultural Land</option>
+                </select>
+              </div>
+              <div>
+                <!-- SUBMIT PRICE -->
+                <label for="price">Price*</label>
+                <input id="price" type="number" required />
+              </div>
+              <div>
+                <!-- SUBMIT AREA -->
+                <label for="area">Area (Sq.ft.)*</label>
+                <input id="area" type="number" required />
+              </div>
+              <div>
+                <!-- SUBMIT PROPERTY AGE -->
+                <label for="property-age">Property Age</label>
+                <input id="property-age" type="number" />
+              </div>
+              <div>
+                <label for="select-amenities">Amenities</label>
+                <!-- SUBMIT AMENITIES -->
+                <select id="select-amenities">
+                  <option value="">Select</option>
+                  <option value="63">Water Softener</option>
+                  <option value="62">Kids Play Area</option>
+                  <option value="61">Volleyball Court</option>
+                  <option value="60">Badminton Court</option>
+                  <option value="59">Cricket Pitch</option>
+                  <option value="58">Wifi</option>
+                  <option value="57">Dining Table</option>
+                  <option value="56">Curtains</option>
+                  <option value="55">Chimney</option>
+                  <option value="54">Microwave</option>
+                  <option value="53">Stove</option>
+                  <option value="52">Water Purifier</option>
+                  <option value="51">Washing Machine</option>
+                  <option value="50">Fans</option>
+                  <option value="49">Lights</option>
+                  <option value="48">Exhaust Fan</option>
+                  <option value="47">Sofa</option>
+                  <option value="46">Wardrobe T.V</option>
+                  <option value="45">Geysers</option>
+                  <option value="44">Modular Kitchen</option>
+                  <option value="43">Air Condition</option>
+                  <option value="42">Refrigerator</option>
+                  <option value="41">Earthquake Resistant</option>
+                  <option value="40">Landscaped Garden</option>
+                  <option value="39">Indoor Games</option>
+                  <option value="38">Jogging park</option>
+                  <option value="37">Yoga centre</option>
+                  <option value="36">Amphitheatre</option>
+                  <option value="35">Poolside Party Deck</option>
+                  <option value="34">Sklandscaping Party Lawns</option>
+                  <option value="33">Sky Lounge</option>
+                  <option value="32">Cabana cafe</option>
+                  <option value="31">Astro deck</option>
+                  <option value="30">Herbal garden</option>
+                  <option value="29">Sky Walkway</option>
+                  <option value="28">Yoga Pads</option>
+                  <option value="27">UPS</option>
+                  <option value="26">Conference Room</option>
+                  <option value="25">Cafeteria</option>
+                  <option value="24">Garden</option>
+                  <option value="23">Terrace</option>
+                  <option value="22">Lawn</option>
+                  <option value="21">Intercom</option>
+                  <option value="20">Reserved Park</option>
+                  <option value="19">CCTV</option>
+                  <option value="18">PlayArea</option>
+                  <option value="17">Balcony</option>
+                  <option value="16">Servant Quarters</option>
+                  <option value="15">Gym</option>
+                  <option value="14">Internet Connection</option>
+                  <option value="13">Security</option>
+                  <option value="12">Parking</option>
+                  <option value="11">Swimming Pool</option>
+                  <option value="10">Gas Connection</option>
+                  <option value="9">Power Backup</option>
+                  <option value="8">Rain Water Harvesting</option>
+                  <option value="7">Clubhouse</option>
+                  <option value="6">Lift</option>
+                  <option value="5">Vaastu</option>
+                  <option value="4">Air Conditioning</option>
+                  <option value="3">Large Windows/Natural Light</option>
+                  <option value="2">Stainless Steel Appliances</option>
+                  <option value="1">Laundry</option>
+                </select>
+              </div>
+              <div>
+                <!-- SUBMIT LOCATION -->
+                <label for="select-location">Location</label>
+                <select id="select-location">
+                  <option value="">Location:</option>
+                  <option value="16592">Airport Road</option>
+                  <option value="9822">Amarawat kalan</option>
+                  <option value="16593">Amarnath Colony</option>
+                  <option value="16594">Amrawad Khurd</option>
+                  <option value="9823">Anand nagar</option>
+                  <option value="16596">Arera Colony</option>
+                  <option value="16597">Arera Hills</option>
+                  <option value="9824">Arera hills</option>
+                  <option value="9825">Arwaliya</option>
+                  <option value="16595">Awadhpuri</option>
+                  <option value="9826">Ayodhaya nagar</option>
+                  <option value="9827">Bag mungalia</option>
+                  <option value="16603">Bagli</option>
+                  <option value="9828">Bagroda</option>
+                  <option value="9829">Bairagarh</option>
+                  <option value="9830">Bairagarh chichali</option>
+                  <option value="16604">Bairagarh Chichali</option>
+                  <option value="16606">Banjari</option>
+                  <option value="9835">Barkheda baramad</option>
+                  <option value="9836">Barkheda h.e.</option>
+                  <option value="9837">Barkheda nathu</option>
+                  <option value="16610">Barkheda Salam</option>
+                  <option value="9838">Barkhedi</option>
+                  <option value="16611">Barkhera Pathani</option>
+                  <option value="9839">Basai</option>
+                  <option value="16612">Basant Kunj</option>
+                  <option value="9840">Bawachiya</option>
+                  <option value="9841">Bawadia kalan</option>
+                  <option value="16607">Bawaria Kalan</option>
+                  <option value="16608">Bawdiya</option>
+                  <option value="9842">Bazaria shahajahanabad</option>
+                  <option value="16601">BDA Colony</option>
+                  <option value="9844">Berasia road</option>
+                  <option value="16609">Bharat Nagar</option>
+                  <option value="16613">Bhauri</option>
+                  <option value="9719">Bheem nagar</option>
+                  <option value="16602">BHEL Sangam Colony</option>
+                  <option value="16614">Bhojpur Road</option>
+                  <option value="9846">Bhonri</option>
+                  <option value="9849">Bilakho</option>
+                  <option value="16227">By pass road</option>
+                  <option value="9850">C.t.t.nagar</option>
+                  <option value="9851">Chandbad</option>
+                  <option value="16615">Chatrasal Nagar</option>
+                  <option value="9852">Chhola road</option>
+                  <option value="9853">Chouk</option>
+                  <option value="16616">Chuna Bhatti</option>
+                  <option value="9854">Dak bhawan</option>
+                  <option value="16617">Danish Kunj</option>
+                  <option value="16618">Danish Nagar</option>
+                  <option value="16619">Dham Kheda</option>
+                  <option value="9855">Dhamarra</option>
+                  <option value="9856">Dhaturiya</option>
+                  <option value="9857">Dillod</option>
+                  <option value="9858">Dungariya</option>
+                  <option value="9859">Durga chouk</option>
+                  <option value="16620">E 8 Extension</option>
+                  <option value="9860">E-2 sector</option>
+                  <option value="9861">Fanda</option>
+                  <option value="9862">Gada jangeer</option>
+                  <option value="9863">Gandhi medical college</option>
+                  <option value="9865">Govindpura</option>
+                  <option value="16624">Govindpura Industrial Area</option>
+                  <option value="16625">Gulmohar Colony</option>
+                  <option value="9866">Gunga</option>
+                  <option value="16225">Hoshangabad</option>
+                  <option value="16590">Hoshangabad Road</option>
+                  <option value="16628">Huzur</option>
+                  <option value="16629">Idgah Hills</option>
+                  <option value="9870">Imaliya</option>
+                  <option value="16630">Indra Vihar Colony</option>
+                  <option value="16631">Indrapuri</option>
+                  <option value="16632">Indus Towne</option>
+                  <option value="9871">Industrial estate</option>
+                  <option value="9872">Islam nagar</option>
+                  <option value="9873">Itwara</option>
+                  <option value="16633">J K Road</option>
+                  <option value="16589">Jatkhedi</option>
+                  <option value="16635">Jawahar Chowk</option>
+                  <option value="9877">Jhagaria khurd</option>
+                  <option value="16226">Jk road</option>
+                  <option value="9878">Jumerati</option>
+                  <option value="9879">Kalara</option>
+                  <option value="16636">Kalpana Nagar</option>
+                  <option value="9880">Kamla nagar</option>
+                  <option value="9881">Kamla park</option>
+                  <option value="16637">Karamveer Nagar</option>
+                  <option value="16638">Karond</option>
+                  <option value="16639">Kasturba Nagar</option>
+                  <option value="16591">Katara Hills</option>
+                  <option value="9893">Kurana</option>
+                  <option value="9894">Kutakipura</option>
+                  <option value="9895">Kuthar</option>
+                  <option value="16643">Laharpur</option>
+                  <option value="9896">Lalariya</option>
+                  <option value="9902">Mahaveer nagar</option>
+                  <option value="16648">Mandakini Colony</option>
+                  <option value="16223">Mandi deep</option>
+                  <option value="9903">Mangal garh</option>
+                  <option value="9904">Meghra kalan</option>
+                  <option value="9905">Misrod</option>
+                  <option value="16649">Misrod</option>
+                  <option value="16646">MP Nagar</option>
+                  <option value="9717">Mp nagar</option>
+                  <option value="9906">Mungalia chhap</option>
+                  <option value="16650">Mungalia Kot</option>
+                  <option value="9907">Mungaliya hatt</option>
+                  <option value="9908">Nabibagh</option>
+                  <option value="9909">Naya samund</option>
+                  <option value="9910">Nayapura</option>
+                  <option value="9911">Nazirabad</option>
+                  <option value="16651">Neelbad</option>
+                  <option value="16652">Nehru Nagar</option>
+                  <option value="16653">New Market</option>
+                  <option value="9912">Nishatpura</option>
+                  <option value="9913">North t.t.nagar</option>
+                  <option value="9914">Old secretriate</option>
+                  <option value="16654">Pallavi Nagar</option>
+                  <option value="16655">Paraspar Colony</option>
+                  <option value="9915">Parwaliya sadak</option>
+                  <option value="16656">Patel Nagar</option>
+                  <option value="16657">Phanda</option>
+                  <option value="16658">Phanda Kala</option>
+                  <option value="9916">Pipal khedi</option>
+                  <option value="9917">Pipaliya jaheerpeer</option>
+                  <option value="9918">Piplani</option>
+                  <option value="16659">Professors Colony</option>
+                  <option value="9921">Raipur</option>
+                  <option value="16661">Raisen Road</option>
+                  <option value="16224">Raisin road</option>
+                  <option value="9922">Raj bhawan</option>
+                  <option value="9927">S.i. line</option>
+                  <option value="16664">Saket Nagar</option>
+                  <option value="16588">Salaiya</option>
+                  <option value="16665">Samardha</option>
+                  <option value="16666">Sankhedi</option>
+                  <option value="16667">Sant Ashram Nagar</option>
+                  <option value="9928">Satpura</option>
+                  <option value="16668">Sector-B Indrapuri</option>
+                  <option value="16669">Sehore</option>
+                  <option value="16679">Subhash Colony</option>
+                  <option value="9939">Subhash nagar</option>
+                  <option value="9940">Sukaliya</option>
+                  <option value="9941">Sukhi sewania</option>
+                  <option value="9942">Suraj nagar</option>
+                  <option value="9943">Tara sewaniya</option>
+                  <option value="9944">Tarawali kalan</option>
+                  <option value="9945">Tila khedi</option>
+                  <option value="9946">Trilanga</option>
+                  <option value="16681">Trilanga</option>
+                  <option value="9947">Tulsi nagar</option>
+                  <option value="9948">Tumada</option>
+                  <option value="9949">University</option>
+                  <option value="16682">Vaishali Nagar</option>
+                  <option value="9950">Vallabh bhawan</option>
+                  <option value="16683">Zone-I Bhopal</option>
+                </select>
+              </div>
+              <div>
+                <!-- SUBMIT ADDRESS -->
+                <label for="address">Property Address</label>
+                <textarea id="address" maxlength="80"> </textarea>
+              </div>
+              <div>
+                <!-- SUBMIT PINCODE -->
+                <label for="pincode">Pin Code</label>
+                <input id="pincode" type="text" maxlength="7" />
+              </div>
+            </div>
+            <button type="submit" class="btn submit__btn">SUBMIT</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- =========== FOOTER =========== -->
+    <footer class="footer section__space">
+      <div class="container grid__footer">
+        <div class="contact__col footer__nav">
+          <span class="footer__title">CONTACT US</span>
+          <ul class="footer__list">
+            <li>
+              <p class="address">
+                <ion-icon
+                  name="location-outline"
+                  class="footer__icon"
+                ></ion-icon>
+                <span>04, Branson Colony, Press Complex Zone, 94107</span>
+              </p>
+            </li>
+            <li>
+              <a class="footer__link" href="tel:+91-8770854933">
+                <ion-icon name="call-outline" class="footer__icon"></ion-icon>
+                <span>+91-8770854933</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                href="mailto:contact@sarvopyproperties.com"
+              >
+                <ion-icon name="mail-outline" class="footer__icon"></ion-icon>
+                <span>contact@sarvopyproperties.com</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <span class="footer__title">LINKS</span>
+          <ul class="footer__list">
+            <li>
+              <a class="footer__link" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="footer__link" href="../index.html#featured"
+                >Properties</a
+              >
+            </li>
+            <li>
+              <a class="footer__link" href="../index.html#services">Services</a>
+            </li>
+            <li>
+              <a class="footer__link" href="./submit.html">Submit Property</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__social-col footer__nav">
+          <span class="footer__title">CONNECT US</span>
+          <ul class="footer__list">
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon name="logo-instagram" class="footer__icon"></ion-icon>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon name="logo-facebook" class="footer__icon"></ion-icon>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">
+                <ion-icon name="logo-twitter" class="footer__icon"></ion-icon>
+                <span>Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <p class="footer__copyright">
+          Copyright &copy; 2022 by Sarvopy Properties Pvt Ltd. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- =========== SCROLL TOP =========== -->
+    <button class="scroll__top icon" id="scroll-top-btn">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </button>
+  </body>
+</html>

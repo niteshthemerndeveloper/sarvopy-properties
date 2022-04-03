@@ -1,29 +1,8 @@
+window.addEventListener('resize', () => {
+  console.log(window.innerWidth);
+});
+
 /** =========== ALL THE MAGIC IS HAPPENING HERE ============ */
-
-/** =========== STICKY NAVIGATION ============ */
-const sectionHeroEl = document.querySelector('.section__hero');
-
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-
-    if (ent.isIntersecting === false) {
-      document.body.classList.add('sticky');
-    }
-
-    if (ent.isIntersecting === true) {
-      document.body.classList.remove('sticky');
-    }
-  },
-  {
-    // In the viewport
-    root: null,
-    threshold: 0,
-    rootMargin: '-80px',
-  }
-);
-
-// obs.observe(sectionHeroEl);
 
 /** =========== MOBILE NAVIGATION ============ */
 function mobileNavigation() {
@@ -35,6 +14,34 @@ function mobileNavigation() {
   });
 }
 mobileNavigation();
+
+/** =========== MOBILE NAVIGATION ============ */
+function stickyNavbar() {
+  const sectionHeroEl = document.querySelector('.section__hero');
+
+  const obs = new IntersectionObserver(
+    function (entries) {
+      const ent = entries[0];
+
+      if (ent.isIntersecting === false) {
+        document.body.classList.add('sticky');
+      }
+
+      if (ent.isIntersecting === true) {
+        document.body.classList.remove('sticky');
+      }
+    },
+    {
+      // In the viewport
+      root: null,
+      threshold: 0,
+      rootMargin: '-80px',
+    }
+  );
+
+  obs.observe(sectionHeroEl);
+}
+stickyNavbar();
 
 /** =========== HERO CAROUSEL/SLIDESHOW ============ */
 function heroCarousel() {
@@ -83,7 +90,7 @@ function heroCarousel() {
 heroCarousel();
 
 /** =========== TESTIMONIAL CAROUSEL/SLIDESHOW ============ */
-function heroCarousel() {
+function testimonialCarousel() {
   const testimonialCardContainer = document.getElementById(
     'testimonial-card-container'
   );
@@ -104,14 +111,21 @@ function heroCarousel() {
   }
 
   function changeTestimonialCard() {
+    let flexGap = 96;
     if (testimonialIndex > testimonialCards.length - 1) {
       testimonialIndex = 0;
     } else if (testimonialIndex < 0) {
       testimonialIndex = testimonialCards.length - 1;
     }
 
+    if (window.innerWidth <= 1136) {
+      flexGap = 84;
+    } else if (window.innerWidth <= 944) {
+      flexGap = 64;
+    }
+
     testimonialCardContainer.style.transform = `translateX(${
-      -testimonialIndex * 596
+      -testimonialIndex * (+testimonialCards[0].clientWidth + flexGap)
     }px)`;
   }
 
@@ -140,7 +154,7 @@ function rangeSlider() {
   const rangeInput = document.querySelectorAll('.range__input input'),
     areaInput = document.querySelectorAll('.area__value'),
     range = document.querySelector('.slider .progress');
-  let areaGap = 1000;
+  let areaGap = 330;
 
   rangeInput.forEach((input) => {
     input.addEventListener('input', (e) => {
@@ -195,7 +209,13 @@ function smoothScrolling() {
         sectionEl.scrollIntoView({ behavior: 'smooth' });
       }
 
+      // Scroll to other pages
+      if (href !== '#') {
+        window.open(href, '_self');
+      }
+
       // Close mobile naviagtion
+      const headerEl = document.querySelector('.header__container');
       if (link.classList.contains('navbar__link'))
         headerEl.classList.toggle('menu__open');
     });

@@ -1,0 +1,166 @@
+/* =========== BREADCRUMB STYLES IS AVAILABLE IN general.css file =========== */
+
+/* =========== PAGES HERO =========== */
+/* Section Space is defined in general.css file */
+.section__hero-pages {
+  background: linear-gradient(45deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/hero/hero-pages-bg.jpg');
+  background: linear-gradient(180deg,
+      rgba(76, 27, 18, 0.8),
+      rgba(76, 27, 18, 0.5)
+    ),
+    url('../img/hero/hero-pages-bg.jpg');
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 9.6rem 0;
+}
+
+.pages__title{
+  color: #ffefec;
+  font-size: var(--h1-font-size);
+  line-height: 1.05;
+  margin-bottom: 2.4rem;
+}
+
+/* =========== ABOUT PAGE =========== */
+/* Section Space is defined in general.css file */
+
+.about__description{
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3.2rem;
+}
+
+.about__description-item{
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 0.8rem;
+}
+
+/* =========== SUBMIT PAGE =========== */
+/* Section Space is defined in general.css file */
+.submit__form-title{
+  display: block;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.submit__form label{
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  margin-bottom: 0.8rem;
+  display: block;
+  /* background-color: #ffffff; */
+}
+
+.submit__form input,
+.submit__form select{
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: 2px solid #ddd;
+  /* background-color: #ffffff; */
+}
+
+.submit__form .submit__btn{
+  margin-top: 1.6rem;
+}
+
+.about__description-item{
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 0.8rem;
+}
+
+/* =========== CONTACT PAGE =========== */
+/* Section Space is defined in general.css file */
+.contact__grid{
+  display: grid;
+  gap: 2.4rem 0;
+}
+
+.contact__text{
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+/* =========== NOT FOUND PAGE =========== */
+/* Section Space is defined in general.css file */
+.section__development{
+  text-align: center;
+}
+
+.developement__message:before, .developement__message:after {
+  content: "4";
+  font-size: 30rem;
+}
+
+.eyes {
+  -webkit-animation: move 2s forwards infinite;
+          animation: move 2s forwards infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  20% {
+    -webkit-transform: translate(0.4rem, -0.4rem);
+  }
+  40% {
+    -webkit-transform: translate(0.6rem, -0.4rem);
+  }
+  60% {
+    -webkit-transform: translate(1.2rem, 0rem);
+  }
+  80% {
+    -webkit-transform: translate(0.6rem, 0.6rem);
+  }
+  100% {
+    -webkit-transform: none;
+  }
+}
+
+@keyframes move {
+   0% {
+      transform: translateX(0%);
+  }
+  20% {
+      transform: translate(0.4rem, -0.4rem);
+  }
+  40% {
+      transform: translate(0.6rem, -0.4rem);
+  }
+  60% {
+      transform: translate(1.2rem, 0rem);
+  }
+  80% {
+      transform: translate(0.6rem, 0.6rem);
+  }
+  100% {
+      transform: none;
+  }
+}
+
+.development__title{
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.development__text{
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+

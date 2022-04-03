@@ -69,17 +69,19 @@
               <a href="#" class="navbar__link">Home</a>
             </li>
             <li class="navbar__item">
-              <a href="#property" class="navbar__link">Properties</a>
+              <a href="./pages/submit.html" class="navbar__link"
+                >Submit Property</a
+              >
             </li>
             <li class="navbar__item">
-              <a href="#cta" class="navbar__link">Contact</a>
+              <a href="./pages/contact.html" class="navbar__link">Contact</a>
             </li>
             <li class="navbar__item">
-              <a href="#about" class="navbar__link">About</a>
+              <a href="./pages/about.html" class="navbar__link">About</a>
             </li>
             <!-- NAVBAR CTA (CALL TO ACTION) -->
             <li class="navbar__item">
-              <a href="#cta" class="btn cta__btn">
+              <a href="./pages/contact.html" class="btn cta__btn">
                 <span class="btn__inner">Free Property Tour</span>
               </a>
             </li>
@@ -100,7 +102,7 @@
     </header>
     <main class="main">
       <!-- =========== HERO =========== -->
-      <section class="section__hero margin-bottom-md">
+      <section class="section__hero">
         <!-- =========== SLIDE SHOW =========== -->
         <div class="carousel">
           <div class="carousel__inner">
@@ -113,17 +115,27 @@
                     <p class="slide__text">
                       We evaluate, verify and list property
                     </p>
-                    <a href="#featured" class="btn cta__btn">
+                    <a href="#cta" class="btn cta__btn">
                       <span class="btn__inner">See How</span>
                     </a>
                   </div>
                 </div>
                 <div class="slide__img-container">
-                  <img
-                    src="./img/hero/apartment-02.jpg"
-                    alt="Night Bedroom, Living Room"
-                    class="slide__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/hero/apartment-02.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./img/hero/apartment-02.jpg"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./img/hero/apartment-02.jpg"
+                      alt="Night Bedroom, Living Room"
+                      class="slide__img"
+                    />
+                  </picture>
                 </div>
               </div>
               <!-- SLIDE 02 -->
@@ -134,17 +146,27 @@
                     <p class="slide__text">
                       Looking to fulfil your dream, upgrade to bigger home
                     </p>
-                    <a href="#featured" class="btn cta__btn">
+                    <a href="#cta" class="btn cta__btn">
                       <span class="btn__inner">See How</span>
                     </a>
                   </div>
                 </div>
                 <div class="slide__img-container">
-                  <img
-                    src="./img/hero/apartment-01.jpg"
-                    alt="New House Apartment Living Room"
-                    class="slide__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/hero/apartment-01.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./img/hero/apartment-01.jpg"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./img/hero/apartment-01.jpg"
+                      alt="New House Apartment Living Room"
+                      class="slide__img"
+                    />
+                  </picture>
                 </div>
               </div>
               <!-- SLIDE 03 -->
@@ -158,17 +180,27 @@
                       Book your first sweet home with top ameneties and enjoy
                       your dream.
                     </p>
-                    <a href="#featured" class="btn cta__btn">
+                    <a href="#cta" class="btn cta__btn">
                       <span class="btn__inner">See How</span>
                     </a>
                   </div>
                 </div>
                 <div class="slide__img-container">
-                  <img
-                    src="./img/hero/apartment-03.jpg"
-                    alt="Beautiful living room, real estate property"
-                    class="slide__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="img/hero/apartment-03.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./img/hero/apartment-03.jpg"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./img/hero/apartment-03.jpg"
+                      alt="Beautiful living room, real estate property"
+                      class="slide__img"
+                    />
+                  </picture>
                 </div>
               </div>
               <!-- SLIDE 04 -->
@@ -179,17 +211,27 @@
                     <p class="slide__text">
                       We are experts in finding the best quality homes
                     </p>
-                    <a href="#featured" class="btn cta__btn">
+                    <a href="#cta" class="btn cta__btn">
                       <span class="btn__inner">See How</span>
                     </a>
                   </div>
                 </div>
                 <div class="slide__img-container">
-                  <img
-                    src="./img/hero/apartment-04.jpg"
-                    alt="Living room, real estate property, real estate photography"
-                    class="slide__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="img/hero/apartment-04.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./img/hero/apartment-04.jpg"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./img/hero/apartment-04.jpg"
+                      alt="Living room, real estate property, real estate photography"
+                      class="slide__img"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -249,7 +291,7 @@
           <form class="search__form grid grid-3-cols">
             <div>
               <!-- SEARCH PURPOSE -->
-              <select id="select-purpose" required>
+              <select id="select-purpose">
                 <option value="">For Buy/Rent:</option>
                 <option value="buy">For Buy</option>
                 <option value="sell">For Sell</option>
@@ -257,7 +299,7 @@
             </div>
             <div>
               <!-- SEARCH PROPERTY -->
-              <select id="select-property" required>
+              <select id="select-property">
                 <option value="">Property Types:</option>
                 <option value="residential-apartment">
                   Residential Apartment
@@ -294,7 +336,7 @@
             </div>
             <div>
               <!-- SEARCH LOCATION -->
-              <select id="select-location" required>
+              <select id="select-location">
                 <option value="">Location:</option>
                 <option value="16592">Airport Road</option>
                 <option value="9822">Amarawat kalan</option>
@@ -456,7 +498,7 @@
             </div>
             <div>
               <!-- SEARCH BHK -->
-              <select id="select-bhk" required>
+              <select id="select-bhk">
                 <option value="">BHK:</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -467,7 +509,7 @@
             </div>
             <div>
               <!-- SEARCH MIN BUDGET -->
-              <select id="select-min-budget" required>
+              <select id="select-min-budget">
                 <option value="">Min Budget:</option>
                 <option value="500000">5 Lac</option>
                 <option value="1000000">10 Lac</option>
@@ -499,7 +541,7 @@
             </div>
             <div>
               <!-- SEARCH MAX BUDGET -->
-              <select id="select-max-budget" required>
+              <select id="select-max-budget">
                 <option value="">Max Budget:</option>
                 <option value="500000">5 Lac</option>
                 <option value="1000000">10 Lac</option>
@@ -531,7 +573,7 @@
             </div>
             <div>
               <!-- SEARCH TRANSACTION -->
-              <select id="select-transaction" required>
+              <select id="select-transaction">
                 <option value="">Transaction:</option>
                 <option value="1">New</option>
                 <option value="2">Resale</option>
@@ -554,7 +596,7 @@
                   class="range__min"
                   min="0"
                   max="10000"
-                  value="2500"
+                  value="0"
                   step="1"
                 />
                 <input
@@ -562,25 +604,30 @@
                   class="range__max"
                   min="0"
                   max="10000"
-                  value="7500"
+                  value="10000"
                   step="1"
                 />
               </div>
               <div class="area__content">
                 <p class="area__field">
-                  <span class="area__value">2500</span> sq ft
+                  <span class="area__value">0</span> sq ft
                 </p>
                 <p class="area__field">
-                  <span class="area__value">7500</span> sq ft
+                  <span class="area__value">10000</span> sq ft
                 </p>
               </div>
             </div>
-            <button type="submit" class="btn search__btn">Search</button>
+            <a href="./development-in-progress.html" class="btn search__btn"
+              >Search</a
+            >
           </form>
         </div>
       </section>
       <!-- =========== FEATURED PROPERTY =========== -->
-      <section class="section__property text-center section__space">
+      <section
+        class="section__property text-center section__space"
+        id="featured"
+      >
         <div class="container">
           <h2 class="heading__secondary">FEATURED PROPERTIES</h2>
         </div>
@@ -624,7 +671,9 @@
                   </span>
                 </li>
               </ul>
-              <button class="btn property__btn">Contact Dealer</button>
+              <a class="btn property__btn" href="./pages/contact.html"
+                >Contact Dealer</a
+              >
             </div>
           </div>
           <!-- Property 02 -->
@@ -667,6 +716,9 @@
                   </span>
                 </li>
               </ul>
+              <a class="btn property__btn" href="./pages/contact.html"
+                >Contact Dealer</a
+              >
             </div>
           </div>
           <!-- Property 03 -->
@@ -708,6 +760,9 @@
                   </span>
                 </li>
               </ul>
+              <a class="btn property__btn" href="./pages/contact.html"
+                >Contact Dealer</a
+              >
             </div>
           </div>
           <!-- Property 04 -->
@@ -749,6 +804,9 @@
                   </span>
                 </li>
               </ul>
+              <a class="btn property__btn" href="./pages/contact.html"
+                >Contact Dealer</a
+              >
             </div>
           </div>
           <!-- Property 05 -->
@@ -790,6 +848,9 @@
                   </span>
                 </li>
               </ul>
+              <a class="btn property__btn" href="./pages/contact.html"
+                >Contact Dealer</a
+              >
             </div>
           </div>
           <!-- Property 06 -->
@@ -833,6 +894,9 @@
                   </span>
                 </li>
               </ul>
+              <a class="btn property__btn" href="./pages/contact.html"
+                >Contact Dealer</a
+              >
             </div>
           </div>
           <!-- Property 07 -->
@@ -874,6 +938,9 @@
                   </span>
                 </li>
               </ul>
+              <a class="btn property__btn" href="./pages/contact.html"
+                >Contact Dealer</a
+              >
             </div>
           </div>
           <!-- Property 08 -->
@@ -917,6 +984,9 @@
                   </span>
                 </li>
               </ul>
+              <a class="btn property__btn" href="./pages/contact.html"
+                >Contact Dealer</a
+              >
             </div>
           </div>
           <!-- Property 09 -->
@@ -958,12 +1028,16 @@
                   </span>
                 </li>
               </ul>
+              <a class="btn property__btn" href="./pages/contact.html"
+                >Contact Dealer</a
+              >
+              <!-- <button class="">Contact Dealer</button> -->
             </div>
           </div>
         </div>
       </section>
       <!-- =========== SERVICES =========== -->
-      <section class="section__service section__space">
+      <section class="section__service section__space" id="services">
         <div class="container text-center">
           <h2 class="heading__secondary">WHAT ARE YOU LOOKING FOR?</h2>
         </div>
@@ -1005,7 +1079,9 @@
           </div>
         </div>
         <div class="container text-center">
-          <button class="btn service__btn">Discover More</button>
+          <a href="./development-in-progress.html" class="btn service__btn"
+            >Discover More</a
+          >
         </div>
       </section>
       <section class="section__testimonial section__space" id="testimonials">
@@ -1019,11 +1095,6 @@
           >
             <!-- TESTIMONIAL 01 -->
             <figure class="testimonial__card">
-              <img
-                class="testimonial__img"
-                alt="Photo of customer Ben Hadley"
-                src="img/customers/ben.jpg"
-              />
               <div class="testimonial__text-container">
                 <blockquote class="testimonial__text">
                   We sold our properties through them. We were completely
@@ -1035,11 +1106,6 @@
             </figure>
             <!-- TESTIMONIAL 02 -->
             <figure class="testimonial__card">
-              <img
-                class="testimonial__img"
-                alt="Photo of customer Ben Hadley"
-                src="img/customers/ben.jpg"
-              />
               <div class="testimonial__text-container">
                 <blockquote class="testimonial__text">
                   They are very professional and helpful. Their team guided me
@@ -1051,11 +1117,6 @@
             </figure>
             <!-- TESTIMONIAL 03 -->
             <figure class="testimonial__card">
-              <img
-                class="testimonial__img"
-                alt="Photo of customer Ben Hadley"
-                src="img/customers/ben.jpg"
-              />
               <div class="testimonial__text-container">
                 <blockquote class="testimonial__text">
                   I had a property in Shiv Nagar which I had to sell. Mr Anurag
@@ -1067,13 +1128,6 @@
             </figure>
             <!-- TESTIMONIAL 04 -->
             <figure class="testimonial__card">
-              <div class="testimonial__img-container">
-                <img
-                  class="testimonial__img"
-                  alt="Photo of customer Ben Hadley"
-                  src="img/customers/ben.jpg"
-                />
-              </div>
               <div class="testimonial__text-container">
                 <blockquote class="testimonial__text">
                   Mr. Anurag from Sarvopy Properties helped us with proper
@@ -1145,56 +1199,71 @@
               <span class="place__text">2 Properties</span>
               <h3 class="place__title">Sehore</h3>
             </div>
-            <img
-              src="./img/places/place-1.jpg"
-              alt="New Palace Beautiful Place"
-              class="place__img"
-            />
+            <div class="place__img-container">
+              <img
+                src="./img/places/place-1.jpg"
+                alt="New Palace Beautiful Place"
+                class="place__img"
+              />
+            </div>
           </div>
           <div class="place__card">
             <div class="place__content">
               <span class="place__text">3 Properties</span>
               <h3 class="place__title">Bhojpur</h3>
             </div>
-            <img
-              src="./img/places/place-2.jpg"
-              alt="Van Vihar Market, Beautiful Shopping Day Photo"
-              class="place__img"
-            />
+            <div class="place__img-container">
+              <img
+                src="./img/places/place-2.jpg"
+                alt="Van Vihar Market, Beautiful Shopping Day Photo"
+                class="place__img"
+              />
+            </div>
           </div>
           <div class="place__card place-col-3">
             <div class="place__content">
               <span class="place__text">2 Properties</span>
               <h3 class="place__title">Kamla Nagar</h3>
             </div>
-            <img
-              src="./img/places/place-3.jpg"
-              alt="Most visited City Spiritual Temple"
-              class="place__img"
-            />
+            <div class="place__img-container">
+              <!-- <img
+                src="./img/places/place-3.jpg"
+                alt="Most visited City Spiritual Temple"
+                class="place__img"
+              /> -->
+              <div
+                class="place__img-col-3"
+                role="img"
+                aria-label="Most visited City Spiritual Temple"
+              ></div>
+            </div>
           </div>
           <div class="place__card place-col-4">
             <div class="place__content">
               <span class="place__text">1 Properties</span>
               <h3 class="place__title">Indra Vihar Colony</h3>
             </div>
-            <img
-              src="./img/places/place-4.jpg"
-              alt="Running Water Circle"
-              class="place__img"
-            />
+            <div class="place__img-container">
+              <img
+                src="./img/places/place-4.jpg"
+                alt="Running Water Circle"
+                class="place__img"
+              />
+            </div>
           </div>
         </div>
       </section>
-      <section class="section__cta section__space">
+      <!-- =========== CTA =========== -->
+      <section class="section__cta section__space" id="cta">
         <div class="container flex cta__container">
           <p class="cta__text">Looking To Sell Or Rent Your Property?</p>
-          <a href="#" class="cta__btn btn">
+          <a href="./pages/submit.html" class="cta__btn btn">
             <span class="btn__inner">SUBMIT NOW</span>
           </a>
         </div>
       </section>
     </main>
+    <!-- =========== FOOTER =========== -->
     <footer class="footer section__space">
       <div class="container grid__footer">
         <div class="contact__col footer__nav">
@@ -1216,7 +1285,10 @@
               </a>
             </li>
             <li>
-              <a class="footer__link" href="mailto:hello@omnifood.com">
+              <a
+                class="footer__link"
+                href="mailto:contact@sarvopyproperties.com"
+              >
                 <ion-icon name="mail-outline" class="footer__icon"></ion-icon>
                 <span>contact@sarvopyproperties.com</span></a
               >
@@ -1230,13 +1302,15 @@
               <a class="footer__link" href="#">Home</a>
             </li>
             <li>
-              <a class="footer__link" href="#">Properties</a>
+              <a class="footer__link" href="#featured">Properties</a>
             </li>
             <li>
-              <a class="footer__link" href="#">Services</a>
+              <a class="footer__link" href="#services">Services</a>
             </li>
             <li>
-              <a class="footer__link" href="#">Submit Property</a>
+              <a class="footer__link" href="./pages/submit.html"
+                >Submit Property</a
+              >
             </li>
           </ul>
         </div>
@@ -1276,7 +1350,6 @@
     <button class="scroll__top icon" id="scroll-top-btn">
       <ion-icon name="chevron-up-outline"></ion-icon>
     </button>
-    <script src="./js/testimonials.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
